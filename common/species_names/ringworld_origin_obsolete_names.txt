@@ -1,0 +1,9 @@
+# Synthetic Evolution Species Names
+named_lists = {
+	obsolete_list = {
+		species_1 = {
+			name = Obsolete
+			plural = Obsoletes
+		}
+	}
+}

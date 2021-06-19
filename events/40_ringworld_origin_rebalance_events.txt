@@ -1,0 +1,124 @@
+namespace = ringworld_origin_rebalance
+
+planet_event = {
+	id = ringworld_origin_rebalance.1
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			has_origin = origin_shattered_ring
+			OR = {
+				has_valid_civic = civic_machine_servitor
+				has_valid_civic = civic_machine_assimilator
+			}
+		}
+	}
+	immediate = {
+		owner = {
+			save_event_target_as = root_owner
+			every_owned_species = {
+				limit = {
+					species = {
+						NOR = {
+							is_same_value = event_target:root_owner
+							has_trait = trait_pc_ringworld_habitable_preference
+							is_archetype = MACHINE
+							is_archetype = ROBOT
+						}
+					}
+				}
+				save_event_target_as = premodification_species
+				log = "creating modification of [premodification_species.GetName] with preference for ringworlds"
+				modify_species = {
+					base = none
+					species = THIS
+					ideal_planet_class = pc_ringworld_habitable
+					change_scoped_species = no
+					effect = {
+						save_event_target_as = postmodification_species
+					}
+				}
+				event_target:postmodification_species = {
+					if = {
+						limit = { event_target:root_owner = { has_valid_civic = civic_machine_assimilator } }
+						set_citizenship_type = {
+							type = citizenship_full_machine
+							country = event_target:root_owner
+						}
+						set_living_standard = {
+							type = living_standard_hive_mind
+							country = event_target:root_owner
+					 	}
+						set_military_service_type = {
+							type = military_service_full
+							country = event_target:root_owner
+						}
+						set_colonization_controls = {
+							type = colonization_control_no
+							country = event_target:root_owner
+						}
+					}
+					else_if = {
+						limit = { event_target:root_owner = { has_valid_civic = civic_machine_servitor } }
+						set_citizenship_type = {
+							type = citizenship_organic_trophy
+							country = event_target:root_owner
+						}
+						set_living_standard = {
+							type = living_standard_organic_trophy
+							country = event_target:root_owner
+						}
+						set_military_service_type = {
+							type = military_service_none
+							country = event_target:root_owner
+						}
+						set_colonization_controls = {
+							type = colonization_control_yes
+							country = event_target:root_owner
+						}
+					}
+					set_population_controls = {
+						type = population_control_no
+						country = event_target:root_owner
+					}
+					set_migration_controls = {
+						type = migration_control_yes
+						country = event_target:root_owner
+					}
+				}
+				rename_species = {
+					name_list = obsolete_list
+				}
+				log = "original species renamed to [premodification_species.GetName]"
+				PREV = {
+					every_owned_pop = {
+						limit = { is_exact_same_species = event_target:premodification_species }
+						change_species = event_target:postmodification_species
+					}
+					every_owned_leader = {
+						limit = { is_exact_same_species = event_target:premodification_species }
+						change_species = event_target:postmodification_species
+					}
+					every_pool_leader = {
+						limit = { is_exact_same_species = event_target:premodification_species }
+						change_species = event_target:postmodification_species
+					}
+					every_owned_army = {
+						limit = {
+							exists = species
+							is_exact_same_species = event_target:premodification_species
+						}
+						change_species = event_target:postmodification_species
+					}
+					every_owned_ship = {
+						limit = {
+							is_ship_class = shipclass_colonizer
+							is_exact_same_species = event_target:premodification_species
+						}
+						change_species = event_target:postmodification_species
+					}
+				}
+			}
+		}
+	}
+}
