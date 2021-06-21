@@ -22,7 +22,12 @@ Because of how species modification at game start works, you will have an "extra
 
 * 1.0.0 Initial version
 * 1.0.1 Add info to README (no script changes)
+* 1.0.2 Remove extra images files to keep distribution lightweight (no script changes)
 
 ## Source Code
 
 [Hosted on GitHub](https://github.com/corsairmarks/ringworld_origin_rebalance)
+
+### Development Notes
+
+It is best to clone this repository in a directory _other_ than `<Stellaris User's Directory>/Paradox Interactive/Stellaris/mod`, and then make a connection to the `mod` folder in this repository via a `*.mod` file's `path` property.  Also note that the README.md file exists in the `mod` directory but is symbolically linked in the root directory.
