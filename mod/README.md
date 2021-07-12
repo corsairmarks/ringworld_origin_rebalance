@@ -23,10 +23,11 @@ Because of how species modification at game start works, you will have an "extra
 * 1.0.0 Initial version
 * 1.0.1 Add info to README (no script changes)
 * 1.0.2 Remove extra images files to keep distribution lightweight (no script changes)
+* 1.0.3 Maintenance release: add logo to Steam description (no script changes)
 
 ## Source Code
 
-[Hosted on GitHub](https://github.com/corsairmarks/ringworld_origin_rebalance)
+Hosted on [GitHub](https://github.com/corsairmarks/ringworld_origin_rebalance)
 
 ### Development Notes
 
