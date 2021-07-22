@@ -10,7 +10,7 @@ This mod adds a single extra event which is triggered after each empire's capita
 
 Should be compatible with almost anything.  If other mods add new origins which also start on a ringworld, this mod will **not** affect them.
 
-### Post-Game Start
+### When to Install
 
 This mod can be safely added or removed from your save game after the game has started.  The code in this mod executes entirely during game setup - if the game was started with the mod, its effects have already been applied, otherwise no code executed.
 
