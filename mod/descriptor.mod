@@ -2,6 +2,7 @@ name="Ringworld Origin Rebalance for 3.0.*"
 tags={
 	"Balance"
 	"Fixes"
+	"Galaxy Generation"
 	"Gameplay"
 }
 version="1.0.3"
