@@ -7,5 +7,6 @@ empire_init_capital_planet = {
 	events = {
 		# at this point the species might have changed (because traits were added in game_start.12), so FROMFROM might not be the secondary species anymore
 		ringworld_origin_rebalance.1
+		ringworld_origin_rebalance.2
 	}
 }
