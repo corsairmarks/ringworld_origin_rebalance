@@ -24,7 +24,10 @@ Because of how species modification at game start works, you will have an "extra
 * 1.0.1 Add info to README (no script changes)
 * 1.0.2 Remove extra images files to keep distribution lightweight (no script changes)
 * 1.0.3 Maintenance release: add logo to Steam description (no script changes)
-* 1.1.0 Add event to set the initial ringworld to use the same graphical culture as your species (base game has slight variation) - particularly notable for the Machine shipset, which has a custom ringworld
+* 1.1.0 Starting ringworld will match your species's shipset (graphical culture)
+    * Event sets the initial ringworld to use the same graphical culture (base game has slight variation)
+    * Particularly notable for the Machine shipset, which has a custom ringworld
+    * Special thanks to Nanderty for finding this graphical detail
 
 ## Source Code
 
