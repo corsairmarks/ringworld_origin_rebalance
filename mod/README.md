@@ -27,7 +27,7 @@ Because of how species modification at game start works, you will have an "extra
 * 1.1.0 Starting ringworld will match your species's shipset (graphical culture)
     * Event sets the initial ringworld to use the same graphical culture (base game has slight variation)
     * Particularly notable for the Machine shipset, which has a custom ringworld
-    * Special thanks to Nanderty for finding this graphical detail
+    * Special thanks to Nanderty for pursuing this graphical detail and FrozenParagon for help with megastructures
 
 ## Source Code
 
