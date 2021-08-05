@@ -14,7 +14,7 @@ planet_event = {
 		}
 	}
 	immediate = {
-		owner = { change_non_robotic_species_habitability = { PLANET_CLASS = pc_ringworld_habitable } }
+		owner = { change_non_robotic_species_habitability = { PLANET_CLASS = ringworld_habitable } }
 	}
 }
 
@@ -56,6 +56,6 @@ planet_event = {
 		}
 	}
 	immediate = {
-		owner = { change_non_robotic_species_habitability = { PLANET_CLASS = pc_machine } }
+		owner = { change_non_robotic_species_habitability = { PLANET_CLASS = machine } }
 	}
 }
