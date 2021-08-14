@@ -2,7 +2,7 @@
 
 Driven Assimilators and Rogue Servitors with the Shattered Ring origin do not have their biological (Cyborg Species/Bio-Trophies) species's habitability preference set to ringworld.  Because other biological empires with the same origin are forced into that habitability preference, this is an unfair advantage for these already-powerful machine empire types.  This mod fixes that by tacking on an extra event after intial empire Pops are generated to adjust habitability for these empire types if they have Origin: Shattered Ring.
 
-This mod now also offers a graphical for for all Shattered Ring origins, and applies a similar habitability change to Driven Assimilators with a Resource Consolidation origin.
+This mod now offers a graphical fix for for all Shattered Ring origins.  It also applies a habitability preference change to Driven Assimilators with a Resource Consolidation origin (machine world preference).
 
 [h1]Changes[/h1]
 
