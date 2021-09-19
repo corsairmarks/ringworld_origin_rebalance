@@ -1,3 +1,5 @@
+**_DEPRECATED:_** Paradox has applied a similar fix in 3.1.1 "Lem" - if you have that version or higher, you do not need this mod.  It remains listed for players who choose to play in the 3.0.* "Dick" versions of Stellaris.
+
 # Overview
 
 Driven Assimilators and Rogue Servitors with the Shattered Ring origin do not have their biological (Cyborg Species/Bio-Trophies) species's habitability preference set to ringworld.  Because other biological empires with the same origin are forced into that habitability preference, this is an unfair advantage for these already-powerful machine empire types.  This mod fixes that by tacking on an extra event after intial empire Pops are generated to adjust habitability for these empire types if they have Origin: Shattered Ring.
@@ -15,6 +17,8 @@ The second event executes for every empire with the Shattered Ring origin.  The 
 The third event only executes its effects for Driven Assimilators (and Rogue Servitors - just in case) with the origin Resource Consolidation (aka Machine World).  The event finds all non-main, non-robotic species on the empire's capital planet and changes their ideal habitability to Machine World (`pc_machine`).
 
 ## Compatibility
+
+Built for Stellaris version 3.0.* "Dick."  Not compatible with achievements.
 
 Should be compatible with almost anything.  If other mods add new origins which also start on a ringworld or machine world, this mod will **not** affect them.
 
